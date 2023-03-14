@@ -1,6 +1,6 @@
-# Wink-Weather
+# React-Weather-App
 
-Minimalistic Weather app using HTML, CSS, JavaScript and Open Weather API
+A weather app made using React.
 
-![image](https://user-images.githubusercontent.com/20955511/111051345-0bcff300-845b-11eb-80ca-717a9a838e2c.png)
+![image](https://github.com/Rudy45KC/React-Weather-App/blob/master/ProjectInterface.png)
 
