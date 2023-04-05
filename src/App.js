@@ -1,5 +1,4 @@
 import {useEffect} from "react"
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -18,7 +17,7 @@ function App() {
     },
     displayWeather:function(data){  
         const {name} = data;
-        const { icon, description} = data.weather[0];
+        const { description} = data.weather[0];
         const {temp, humidity } = data.main;
         const { speed } = data.wind;
         //console.log(name, icon, description, temp, humidity, speed)
@@ -44,12 +43,13 @@ useEffect(()=>{
   });
   
   document.querySelector(".search-bar").addEventListener("keyup", function(event){
-      if(event.key == "Enter"){
+      if(event.key === "Enter"){
           weather.search();
       }
   })
   
   weather.fetchWeather("London");
+  // eslint-disable-next-line react-hooks/exhaustive-deps
 }, [])
 
   
